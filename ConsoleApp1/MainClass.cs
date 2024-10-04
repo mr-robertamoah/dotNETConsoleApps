@@ -20,6 +20,7 @@ namespace ConsoleApp1
             Console.WriteLine("For UsingDoWhile type 5.");
             Console.WriteLine("6 for the FizzBuzz game.");
             Console.WriteLine("7 for the FillAndFind game.");
+            Console.WriteLine("8 for the OddAndEven game.");
             Console.WriteLine();
             Console.Write("Type your selection: ");
 
@@ -58,6 +59,9 @@ namespace ConsoleApp1
                     break;
                 case 7:
                     FillAndFind.Run();
+                    break; ;
+                case 8:
+                    OddAndEven.Run();
                     break;
                 default:
                     Console.WriteLine("No program for your selection");
@@ -86,6 +90,13 @@ namespace ConsoleApp1
                 string numberInput = Console.ReadLine();
 
                 conversionSuccess = int.TryParse(numberInput, out number);
+
+                if (conversionSuccess || !strict)
+                    break;
+
+                Console.WriteLine();
+                Console.WriteLine("The number you provided is not valid.");
+                Console.WriteLine();
 
                 if (!conversionSuccess && !strict)
                     break;
