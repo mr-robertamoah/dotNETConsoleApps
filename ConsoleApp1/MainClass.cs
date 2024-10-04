@@ -19,6 +19,7 @@ namespace ConsoleApp1
             Console.WriteLine("For UsingWhile type 4.");
             Console.WriteLine("For UsingDoWhile type 5.");
             Console.WriteLine("6 for the FizzBuzz game.");
+            Console.WriteLine("7 for the FillAndFind game.");
             Console.WriteLine();
             Console.Write("Type your selection: ");
 
@@ -54,6 +55,9 @@ namespace ConsoleApp1
                     break;
                 case 6:
                     FizzBuzz.Run();
+                    break;
+                case 7:
+                    FillAndFind.Run();
                     break;
                 default:
                     Console.WriteLine("No program for your selection");
