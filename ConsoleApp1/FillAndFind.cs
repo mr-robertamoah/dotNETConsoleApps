@@ -19,12 +19,6 @@ namespace ConsoleApp1
             Console.WriteLine("This lets you decide which numbers you want to store in a box. Then you get find the position of a number you choose from the given set when the numbers are arranged in descending order.");
             Console.WriteLine();
 
-            //Dictionary<string, string> friends = new Dictionary<string, string>()
-            //{
-            //    {"Jammes", "Amoah"},
-            //    {"Robert", "Amoah"},
-            //};
-
             (_, int numberOfItems) = MainClass.GetIntFromUser(
                 "How many numbers do you want to put into the box? "
             );

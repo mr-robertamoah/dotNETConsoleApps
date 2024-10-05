@@ -21,6 +21,7 @@ namespace ConsoleApp1
             Console.WriteLine("6 for the FizzBuzz game.");
             Console.WriteLine("7 for the FillAndFind game.");
             Console.WriteLine("8 for the OddAndEven game.");
+            Console.WriteLine("9 for the ListFriends game.");
             Console.WriteLine();
             Console.Write("Type your selection: ");
 
@@ -59,9 +60,12 @@ namespace ConsoleApp1
                     break;
                 case 7:
                     FillAndFind.Run();
-                    break; ;
+                    break;
                 case 8:
                     OddAndEven.Run();
+                    break;
+                case 9:
+                    Friends.Run();
                     break;
                 default:
                     Console.WriteLine("No program for your selection");
